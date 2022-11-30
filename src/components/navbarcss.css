@@ -1,0 +1,70 @@
+.NavbarItems {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 2% 6%;
+    background-color: rgb(245, 239, 239);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    width: 100%;
+}
+  
+.logo {
+    cursor: pointer;
+}
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 25px;
+    list-style: none;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-links {
+    text-decoration: none;
+    color: black;  
+}
+.active {
+    color: skyblue;
+}
+.nav-links:hover {
+    color: rgb(93, 120, 131);
+}
+.menu-icons {
+    display: none;
+}
+  
+@media screen and (max-width: 858px) {
+    .NavbarItems {
+      z-index: 99;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: rgba(255, 255, 255);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      border-radius: 13px;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: -110%;
+      align-items: stretch;
+      padding: 60px 0 30px 40px;
+      margin: 0;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
+    .nav-menu.show {
+      left: 0;
+    }
+    .menu-icons {
+      display: block;
+    }
+}
+  

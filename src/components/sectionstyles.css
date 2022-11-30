@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Mochiy+Pop+One&display=swap");
+
+.parTitle {
+  color: rgb(113, 193, 224);
+  font-family: "Mochiy Pop One", sans-serif;
+}
+.reflink {
+  background: rgb(113, 193, 224);
+  color: white;
+}
+.card-heading {
+  font-family: "Mochiy Pop One", sans-serif;
+  color: rgb(66, 61, 61);
+  padding-bottom: 20px;
+  line-height: 45px;
+}
+.card-text {
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  padding-bottom: 20px;
+}
+form {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  right: 0;
+  padding: 13px;
+  color: rgb(63, 202, 188);
+}
+.sectionTest {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-bottom: 22px;
+  margin-left: 20%;
+}
+.error-message {
+  color: red;
+  font-size: 15px;
+  text-align: left;
+  line-height: 2px;
+}
+.form {
+  margin-top: 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+.step-2 {
+  flex-direction: row-reverse;
+}
+.sectionTest img {
+  width: 110px;
+  padding: auto 2px;
+}
+.test {
+  margin: 0 20px;
+}
+.sectncard {
+  padding: 20px;
+  min-height: 60vh;
+  display: grid;
+}
+.col-card {
+  width: 100%;
+}
+.cardtext {
+  align-content: end;
+}
+
+@media screen and (max-width: 780px) {
+    .sectionTest {
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+@media screen and (max-width: 1068px) {
+  .sectionTest {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .row {
+    flex-direction: column;
+  }
+}

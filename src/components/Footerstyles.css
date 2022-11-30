@@ -1,0 +1,25 @@
+.footer-row {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .footer-col ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer-col ul a {
+    text-decoration: none;
+  }
+  .footer-col ul a:not(.active) {
+    color: black;
+  }
+  .footer-heading {
+    font-weight: 600;
+    color: grey;
+  }
+  .copyrite {
+    font-size: 16px;
+    color: grey;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
